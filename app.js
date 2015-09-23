@@ -38,6 +38,7 @@ app.use(function(req, res, next) {
 });
 
 app.get('/', function(req, res) {
+  console.log(process.env);
   res.render('index', { currentTime: new Date() });
 });
 
